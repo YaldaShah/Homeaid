@@ -1,0 +1,177 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(221, 232, 229);
+}
+
+:root {
+    --primary-color: rgb(6, 193, 177);
+    --accent-color: rgb(9, 86, 93);
+    --extraordinary-color: rgb(249, 221, 9);
+}
+
+.icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    max-width: 100%;
+    margin:0 auto;
+    padding-right: 190px;
+}
+.header_title{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header span{
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: var(--primary-color);
+    padding-left: 20px;
+    transition: all 22;
+    text-decoration: none;
+    
+}
+
+.header span:hover{
+    transform: scale(20deg);
+
+}
+.header.icon {
+    color: var(--primary-color);
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+
+.header-navigation a {
+    text-decoration: none;
+    margin-left: 29px;
+    font-size: 20px ;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper aside{
+    width: 50%;
+    margin-top: 45px;
+    position: relative;
+}
+
+.helpaid{
+    width: 785px;
+    height: 600px;
+    background-color: var(--extraordinary-color);
+    border-radius: 50%;
+    position: absolute;
+    right: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 50%;
+    margin-top: 10px;
+    max-width:  571px;
+
+}
+
+.wrapper main p{
+    direction: rtl;
+    color: var(--accent-color);
+    margin-top: 180px;
+    line-height: 20px;
+    z-index: 1;
+}
+.circel_1{
+display: flex;
+border: dotted 1px;
+border-radius: 50%;
+background-color: var(--extraordinary-color);
+}
+
+.circel_2{
+
+}
+
+.buttons .button-join{
+    background-color: rgb(255, 147, 6);
+    font-size: 15px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.buttons .button-contact{
+    background-color: rgb(8, 35, 243);
+    color: var(--extraordinary-color);
+    font-size: 15px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.buttons .button-free{
+    background-color: rgb(243, 71, 8);
+    font-size: 15px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.buttons button{
+    border: none;
+    border-radius: 50px;
+    padding: 16px 47px;
+    
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 70px;
+
+}
+
+@media screen and (max-width:1400px){
+    .header{
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .header-navigation{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        z-index: 1;
+        display: block;
+    }
+}
